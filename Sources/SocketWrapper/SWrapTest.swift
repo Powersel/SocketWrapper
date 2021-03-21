@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class SWrapTest {
+public final class SWrapTest {
     
     private static let customName = "Wrapper is works: "
     
