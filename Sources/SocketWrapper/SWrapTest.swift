@@ -10,12 +10,17 @@ import Foundation
 public final class SWrapTest {
     
     private static let customName = "Wrapper is works: "
+    let name: String
     
-    static func pp(with name: String) {
+    public init(word: String) {
+        self.name = word
+    }
+    
+    public static func pp(with name: String) {
         print(customName, name)
     }
     
-    func simplePP(with word: String) {
-        print(word, "Test print")
+    public func simplePP(with word: String) {
+        print(word, "Test print", name)
     }
 }
